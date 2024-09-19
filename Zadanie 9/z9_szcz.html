@@ -1,0 +1,19 @@
+Zastosowanie:
+Jest używany kiedy użytkownik ma wpisać coś np. zanim wejdzie w dany moduł strony. Np. hasło.
+Użytkownik po wpisaniu wartość może nacisnął „OK.” albo „Cancel” Jeżeli użytkownik kliknie „OK.”
+metoda zwraca wpisaną wartość, a w przeciwnym wypadku zwraca null.
+<!DOCTYPE html>
+    <head>
+        <script type="text/javascript">
+            function show_prompt() {
+                var name=prompt("Napisz imię","Imię Nazwisko");
+                if (name!=null && name!="") {
+                    document.write("Witaj " + name + "! jak się masz?");
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <input type="button" onclick="show_prompt()" value="Pokaż prompt box" />
+    </body>
+</html>

@@ -1,0 +1,21 @@
+Zastosowanie:
+Jest używany, jeśli chcemy zapytać użytkownika o weryfikacje, lub akceptację jakichś danych.
+Użytkownik musi nacisnąć „OK.” w celu akceptacji bądź „Cancel” w celu odrzucenia. Jeżeli zostanie
+wybrane „OK.” metoda zwraca true w przeciwnym wypadku false.
+<!DOCTYPE html>
+    <head>
+        <script type="text/javascript">
+            function show_confirm()
+            {
+                var r=confirm("Naciśnij klawisz");
+                if (r==true)
+                    { document.write("Nacisnąłeś OK!"); }
+                else
+                    { document.write("Nacisnąłeś Cancel!"); }
+            }
+        </script>
+    </head>
+    <body>
+        <input type="button" onclick="show_confirm()" value="Pokaż confirm box" />
+    </body>
+</html>
