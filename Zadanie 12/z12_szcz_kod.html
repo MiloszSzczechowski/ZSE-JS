@@ -9,7 +9,7 @@
 <html>
     <head>
         <script type="text/javascript" src="../windows.js"></script>
-        <script type="text/javascript" src="./z11_szcz.js"></script>
+        <script type="text/javascript" src="./z12_szcz.js"></script>
     </head>
     <body>
         
@@ -24,7 +24,10 @@
 let d1_szcz = 30
 let d2_szcz = 28
 
-let seconds = (d1_szcz - d2_szcz) * 24 * 60 * 60
+let g1_szcz = 4
+let g2_szcz = 22
+
+let seconds = ((d1_szcz - d2_szcz) * 24 + (g1_szcz - g2_szcz)) * 60 * 60
 
 document.write(`${seconds}`.fontcolor("green").fontsize(40))
             </textarea>

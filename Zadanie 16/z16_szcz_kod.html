@@ -9,7 +9,7 @@
 <html>
     <head>
         <script type="text/javascript" src="../windows.js"></script>
-        <script type="text/javascript" src="./z11_szcz.js"></script>
+        <script type="text/javascript" src="./z16_szcz.js"></script>
     </head>
     <body>
         
@@ -21,12 +21,15 @@
 
             <h1>KOD JS</h1>
             <textarea name="KOD JS" cols="150" rows="20" readonly>
-let d1_szcz = 30
-let d2_szcz = 28
+let a = parseInt(prompt("Podaj A"));
+let b = parseInt(prompt("Podaj B"));
+let r = Math.pow(a+b, 3);
 
-let seconds = (d1_szcz - d2_szcz) * 24 * 60 * 60
-
-document.write(`${seconds}`.fontcolor("green").fontsize(40))
+document.write(
+    `(${a} + ${b})^3 = <br>`.fontcolor("darkblue") +
+    `${a}^3 + 3*((${a})^2)*(${b}) + 3*(${a})*((${b})^2) + ${b}^3 = <br>`.fontcolor("darkblue").fontsize(50) +
+    `${r}`.fontcolor("darkblue")
+)
             </textarea>
         </form>
 
