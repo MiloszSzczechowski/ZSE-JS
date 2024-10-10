@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <script type="text/javascript" src="../windows.js"></script>
+    </head>
+    <body>
+        <form>
+            <h1>KOD HTML</h1>
+            <textarea name="KOD HTML" cols="150" rows="20" readonly>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <script type="text/javascript" src="z19_szcz.js"></script>
+    </head>
+    <body>
+
+        <h1>Wszystko o KWADRACIE</h1><br><br>
+        Podaj długość boku: <input type="text" id="dlugosc" value="podaj długość"> cm<br><br><br>
+        <input type="button" name="pole" value="Oblicz pole" Onclick="pole_szczechowski()"><br><br>
+        <input type="button" name="obwod" value="Oblicz obwod" Onclick="obwod_szczechowski()"><br><br>
+        <div style="color:red;font-size:50px;"id="nazwa"></div>
+        
+        <br><br>
+        <input type="button" value="zamknij okno" onclick="okno_zamknij_szczechowski()"/>
+    </body>
+</html>
+            </textarea>
+
+            <h1>KOD JS</h1>
+            <textarea name="KOD JS" cols="150" rows="20" readonly>
+function pole_szczechowski() {
+    let a= parseFloat(document.getElementById('dlugosc').value);
+    let b= a*a;
+    document.getElementById("nazwa").innerHTML ="Pole kwadratu= "+b.toFixed(2)+" cm^2";
+}
+function obwod_szczechowski() {
+    let a= parseFloat(document.getElementById('dlugosc').value);
+    let b= 4*a;
+    document.getElementById("nazwa").innerHTML ="Obwód kwadratu= "+b.toFixed(2)+" cm";
+}
+            </textarea>
+        </form>
+
+
+        <input type="button" value="zamknij okno" onclick="okno_zamknij_szczechowski()"/>
+    </body>
+</html>

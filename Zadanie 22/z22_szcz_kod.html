@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <script type="text/javascript" src="../windows.js"></script>
+    </head>
+    <body>
+        <form>
+            <h1>KOD HTML</h1>
+            <textarea name="KOD HTML" cols="150" rows="20" readonly>
+<html>
+    <head>
+        <script type="text/javascript" src="../windows.js"></script>
+        <script type="text/javascript" src="z22_szcz.js"></script>
+        <style>
+            table, td {
+                border: 1px solid;
+                border-collapse: collapse;
+            }
+            thead td {
+                border: 2px solid;
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <br><br>
+        <input type="button" value="zamknij okno" onclick="okno_zamknij_szczechowski()"/>
+    </body>
+</html>
+            </textarea>
+
+            <h1>KOD JS</h1>
+            <textarea name="KOD JS" cols="150" rows="20" readonly>
+function pole_szczechowski(a, b) {
+    return a * b;
+}
+
+function obwod_szczechowski(a, b) {
+    return a*2 + b*2;
+}
+
+let a = prompt("A:");
+let b = prompt("B:");
+
+document.write(
+    `<table>
+        <thead>
+            <td>wyprowadz_pole_szc</td>
+            <td>wyprowadz_obw_szc</td>
+        </thead>
+        <tbody>
+            <td><input name="pole" value="${pole_szczechowski(a, b)}"/></td>
+            <td><input name="obw" value="${obwod_szczechowski(a, b)}"/></td>
+        </tbody>
+    </table>`
+)
+            </textarea>
+        </form>
+
+
+        <input type="button" value="zamknij okno" onclick="okno_zamknij_szczechowski()"/>
+    </body>
+</html>

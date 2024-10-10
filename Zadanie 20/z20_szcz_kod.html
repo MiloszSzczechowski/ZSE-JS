@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <script type="text/javascript" src="../windows.js"></script>
+    </head>
+    <body>
+        <form>
+            <h1>KOD HTML</h1>
+            <textarea name="KOD HTML" cols="150" rows="20" readonly>
+<html>
+    <head>
+        <script type="text/javascript" src="../windows.js"></script>
+        <script type="text/javascript" src="z20_szcz.js"></script>
+    </head>
+    <body>
+        Podaj wartość X punktu A: <input type="text" id="xa"><br>
+        Podaj wartość Y punktu A: <input type="text" id="ya"><br>
+        Podaj wartość X punktu B: <input type="text" id="xb"><br>
+        Podaj wartość Y punktu B: <input type="text" id="yb"><br>
+        Podaj wartość X punktu C: <input type="text" id="xc"><br>
+        Podaj wartość Y punktu C: <input type="text" id="yc"><br>
+
+        <input type="button" name="calculate" value="Oblicz długości boków" Onclick="get_sides()"><br><br>
+
+        <div style="color:red;font-size:20px;" id="answears"></div>
+        
+        <br><br>
+        <input type="button" value="zamknij okno" onclick="okno_zamknij_szczechowski()"/>
+    </body>
+</html>
+            </textarea>
+
+            <h1>KOD JS</h1>
+            <textarea name="KOD JS" cols="150" rows="20" readonly>
+function get_distance(xa, ya, xb, yb) {
+    let a = xb - xa;
+    let b = yb - ya;
+    let c = Math.sqrt((a * a) + (b * b));
+
+    console.log(a)
+    console.log(b)
+
+    return c;
+}
+
+function get_sides() {
+    let xa = parseFloat(document.getElementById('xa').value);
+    let ya = parseFloat(document.getElementById('ya').value);
+    let xb = parseFloat(document.getElementById('xb').value);
+    let yb = parseFloat(document.getElementById('yb').value);
+    let xc = parseFloat(document.getElementById('xc').value);
+    let yc = parseFloat(document.getElementById('yc').value);
+
+    let div = document.getElementById("answears");
+
+    div.innerHTML = "";
+
+    div.innerHTML += `Długość boku AB: ${get_distance(xa, ya, xb, yb)} <br>`;
+    div.innerHTML += `Długość boku BC: ${get_distance(xb, yb, xc, yc)} <br>`;
+    div.innerHTML += `Długość boku CA: ${get_distance(xb, yb, xa, ya)} <br>`;
+}
+            </textarea>
+        </form>
+
+
+        <input type="button" value="zamknij okno" onclick="okno_zamknij_szczechowski()"/>
+    </body>
+</html>

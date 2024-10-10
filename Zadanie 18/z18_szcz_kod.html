@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <script type="text/javascript" src="../windows.js"></script>
+    </head>
+    <body>
+        <form>
+            <h1>KOD HTML</h1>
+            <textarea name="KOD HTML" cols="150" rows="20" readonly>
+<html>
+    <head>
+        <script type="text/javascript" src="../windows.js"></script>
+        <script type="text/javascript" src="z18_szcz.js"></script>
+    </head>
+    <body>
+        
+        <br><br>
+        <input type="button" value="zamknij okno" onclick="okno_zamknij_szczechowski()"/>
+    </body>
+</html>
+            </textarea>
+
+            <h1>KOD JS</h1>
+            <textarea name="KOD JS" cols="150" rows="20" readonly>
+function suma_szc(a, b) {
+    return a + b;
+}
+
+function odejmowanie_szc(a, b) {
+    return a - b;
+}
+
+function mnozenie_szc(a, b) {
+    return a * b;
+}
+
+function do_kwadratu_szc(a, b) {
+    return "" + a*a + " " + b*b;
+}
+
+function reszta_z_dzielenia_a_przez_b_szc(a, b) {
+    return a % b;
+}
+
+var a=parseFloat(prompt("a=",""));
+var b=parseFloat(prompt("b=",""));
+
+
+document.write("suma="+suma_szc(a,b)+"<br>");
+document.write("odejmowanie="+odejmowanie_szc(a,b)+"<br>");
+document.write("mnozenie="+mnozenie_szc(a,b)+"<br>");
+document.write("do kwadratu="+do_kwadratu_szc(a,b)+"<br>");
+document.write("reszta z dzielenia a przez b="+reszta_z_dzielenia_a_przez_b_szc(a,b)+"<br>");
+            </textarea>
+        </form>
+
+
+        <input type="button" value="zamknij okno" onclick="okno_zamknij_szczechowski()"/>
+    </body>
+</html>
