@@ -1,0 +1,20 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <form name="form" action="" onsubmit="this.wysokosc.value = pythagoras(this.a.value, this.b.value); this.kat.value = atan(this.a.value, this.b.value); return false;">
+            Podaj Odleglosc= <input size="6" name="a">
+            Podaj Droge= <input size="6" name="b">
+            <br>
+            <input type="submit" value="oblicz">
+            <br>
+            Wysokosc= <input size="6" name="wysokosc">
+            Kat= <input size="6" name="kat">
+        </form>
+
+        <br><br>
+        <input type="button" value="zamknij okno" onclick="okno_zamknij_szczechowski()"/>
+        <script type="text/javascript" src="../windows.js"></script>
+        <script type="text/javascript" src="z27_szcz.js"></script>
+    </body>
+</html>

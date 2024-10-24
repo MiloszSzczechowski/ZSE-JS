@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <script type="text/javascript" src="../windows.js"></script>
+    </head>
+    <body>
+        <form>
+            <h1>KOD HTML</h1>
+            <textarea name="KOD HTML" cols="150" rows="20" readonly>
+<html>
+    <head>
+        <script type="text/javascript" src="../windows.js"></script>
+        <script type="text/javascript" src="z23_szcz.js"></script>
+    </head>
+    <body>
+        <form name="form" action="" onsubmit="this.drabina.value = pythagoras(this.d.value, this.x.value); this.alfa.value = atan(this.d.value, this.x.value); return false;">
+            Podaj d= <input size="6" name="d">
+            Podaj x= <input size="6" name="x">
+            <br>
+            <input type="submit" value="oblicz">
+            <br>
+            Drabina= <input size="6" name="drabina">
+            Alfa= <input size="6" name="alfa">
+        </form>
+
+
+        <br><br>
+        <input type="button" value="zamknij okno" onclick="okno_zamknij_szczechowski()"/>
+    </body>
+</html>
+            </textarea>
+
+            <h1>KOD JS</h1>
+            <textarea name="KOD JS" cols="150" rows="20" readonly>
+function pythagoras(a, b) {
+    return Math.sqrt((a*a) + (b*b))
+}
+
+function atan(a, b) {
+    return Math.atan(a / b) * 180 / Math.PI
+}
+            </textarea>
+        </form>
+
+
+        <input type="button" value="zamknij okno" onclick="okno_zamknij_szczechowski()"/>
+    </body>
+</html>

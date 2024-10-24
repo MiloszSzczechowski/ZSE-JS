@@ -1,0 +1,21 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <form name="form" action="" onsubmit="this.pole.value = pole(this.a.value, this.b.value, this.h.value); this.obwod.value = obw(this.a.value, this.b.value, this.h.value); return false;">
+            Podaj A= <input size="6" name="a">
+            Podaj B= <input size="6" name="b">
+            Podaj H= <input size="6" name="h">
+            <br>
+            <input type="submit" value="oblicz">
+            <br>
+            Pole= <input size="6" name="pole">
+            Obwod= <input size="6" name="obwod">
+        </form>
+
+        <br><br>
+        <input type="button" value="zamknij okno" onclick="okno_zamknij_szczechowski()"/>
+        <script type="text/javascript" src="../windows.js"></script>
+        <script type="text/javascript" src="z26_szcz.js"></script>
+    </body>
+</html>

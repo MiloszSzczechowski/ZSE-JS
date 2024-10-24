@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <script type="text/javascript" src="../windows.js"></script>
+    </head>
+    <body>
+        <form>
+            <h1>KOD HTML</h1>
+            <textarea name="KOD HTML" cols="150" rows="20" readonly>
+<html>
+    <head>
+    </head>
+    <body>
+        <form name="form" action="" onsubmit="this.pole.value = pole(this.a.value, this.b.value, this.h.value); this.obwod.value = obw(this.a.value, this.b.value, this.h.value); return false;">
+            Podaj A= <input size="6" name="a">
+            Podaj B= <input size="6" name="b">
+            Podaj H= <input size="6" name="h">
+            <br>
+            <input type="submit" value="oblicz">
+            <br>
+            Pole= <input size="6" name="pole">
+            Obwod= <input size="6" name="obwod">
+        </form>
+
+        <br><br>
+        <input type="button" value="zamknij okno" onclick="okno_zamknij_szczechowski()"/>
+        <script type="text/javascript" src="../windows.js"></script>
+        <script type="text/javascript" src="z26_szcz.js"></script>
+    </body>
+</html>
+            </textarea>
+
+            <h1>KOD JS</h1>
+            <textarea name="KOD JS" cols="150" rows="20" readonly>
+function circumfrence(a, b, h) {
+    a1 = Math.abs((a - b) / 2);
+    c1 = h*h + a1*a1;
+    return a + b + (c1 * 2);
+}
+function area(a, b, h) {
+    return ((a+b) * h) / 2;
+}
+            </textarea>
+        </form>
+
+
+        <input type="button" value="zamknij okno" onclick="okno_zamknij_szczechowski()"/>
+    </body>
+</html>

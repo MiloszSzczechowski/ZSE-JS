@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <script type="text/javascript" src="../windows.js"></script>
+        <script type="text/javascript" src="z23_szcz.js"></script>
+    </head>
+    <body>
+        <form name="form" action="" onsubmit="this.drabina.value = pythagoras(this.d.value, this.x.value); this.alfa.value = atan(this.d.value, this.x.value); return false;">
+            Podaj d= <input size="6" name="d">
+            Podaj x= <input size="6" name="x">
+            <br>
+            <input type="submit" value="oblicz">
+            <br>
+            Drabina= <input size="6" name="drabina">
+            Alfa= <input size="6" name="alfa">
+        </form>
+
+
+        <br><br>
+        <input type="button" value="zamknij okno" onclick="okno_zamknij_szczechowski()"/>
+    </body>
+</html>
