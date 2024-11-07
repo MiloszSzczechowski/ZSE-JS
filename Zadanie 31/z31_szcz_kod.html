@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <script type="text/javascript" src="../windows.js"></script>
+    </head>
+    <body>
+        <form>
+            <h1>KOD HTML</h1>
+            <textarea name="KOD HTML" cols="150" rows="20" readonly>
+<html>
+    <head>
+        <script type="text/javascript" src="../windows.js"></script>
+        <script type="text/javascript" src="z31_szcz.js"></script>
+    </head>
+    <body>
+
+        Programowanie obiektowe. <br>
+        Obiekt to pociąg<br>
+        Pola:<br>
+        ile_wagonow<br>
+        rodzaj<br>
+        pendolino<br>
+        metoda: Pociag_wyswietl_szczechowski<br>
+        nowe pole to konduktor <br>
+        nowa metoda to Pociag_pokaz_szczechowski();<br>
+        
+        <br><br>
+        <input type="button" value="zamknij okno" onclick="okno_zamknij_szczechowski()"/>
+    </body>
+</html>
+            </textarea>
+
+            <h1>KOD JS</h1>
+            <textarea name="KOD JS" cols="150" rows="20" readonly>
+let pociag = {
+    ile_wagonow: 20,
+    rodzaj: "pasazerski",
+    pendolino: false,
+    Pociag_wyswietl_szczechowski: function () {
+        document.write(this.ile_wagonow + ' wagonow ' + this.rodzaj + ' <br>');
+    }
+}
+
+pociag.konduktor = "Pawel Wohlfahrt";
+pociag.Pociag_pokaz_szczechowski = function () {
+    alert(this.konduktor);
+}
+
+pociag.Pociag_wyswietl_szczechowski();
+            </textarea>
+        </form>
+
+
+        <input type="button" value="zamknij okno" onclick="okno_zamknij_szczechowski()"/>
+    </body>
+</html>

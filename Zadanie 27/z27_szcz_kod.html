@@ -6,12 +6,37 @@
         <form>
             <h1>KOD HTML</h1>
             <textarea name="KOD HTML" cols="150" rows="20" readonly>
+<html>
+    <head>
+    </head>
+    <body>
+        <form name="form" action="" onsubmit="this.wysokosc.value = pythagoras(this.a.value, this.b.value); this.kat.value = atan(this.a.value, this.b.value); return false;">
+            Podaj Odleglosc= <input size="6" name="a">
+            Podaj Droge= <input size="6" name="b">
+            <br>
+            <input type="submit" value="oblicz">
+            <br>
+            Wysokosc= <input size="6" name="wysokosc">
+            Kat= <input size="6" name="kat">
+        </form>
 
+        <br><br>
+        <input type="button" value="zamknij okno" onclick="okno_zamknij_szczechowski()"/>
+        <script type="text/javascript" src="../windows.js"></script>
+        <script type="text/javascript" src="z27_szcz.js"></script>
+    </body>
+</html>
             </textarea>
 
             <h1>KOD JS</h1>
             <textarea name="KOD JS" cols="150" rows="20" readonly>
+function pythagoras(a, b) {
+    return Math.sqrt(a*a + b*b);
+}
 
+function atan(a, b) {
+    return (Math.atan(a / b) * 180 / Math.PI).toFixed(2);
+}
             </textarea>
         </form>
 

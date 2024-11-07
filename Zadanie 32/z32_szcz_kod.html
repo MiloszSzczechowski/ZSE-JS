@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <script type="text/javascript" src="../windows.js"></script>
+    </head>
+    <body>
+        <form>
+            <h1>KOD HTML</h1>
+            <textarea name="KOD HTML" cols="150" rows="20" readonly>
+<html>
+    <head>
+        <script type="text/javascript" src="../windows.js"></script>
+        <script type="text/javascript" src="z32_szcz.js"></script>
+    </head>
+    <body>
+        
+        <br><br>
+        <input type="button" value="zamknij okno" onclick="okno_zamknij_szczechowski()"/>
+    </body>
+</html>
+            </textarea>
+
+            <h1>KOD JS</h1>
+            <textarea name="KOD JS" cols="150" rows="20" readonly>
+function pociag(ile_wagonow,rodzaj,pendolino) {
+    this.ile_wagonow=ile_wagonow;
+    this.rodzaj=rodzaj;
+    this.pendolino=pendolino;
+}
+
+pociag.prototype.wypisz = function () {
+    alert(this.ile_wagonow + ' ' + this.rodzaj + ' ' + this.pendolino);
+};
+var pociag1 = new pociag(20, "pasazerski", true);
+var pociag2 = new pociag(15, "towarowy", false);
+
+pociag1.wypisz(); 
+pociag2.wypisz();
+document.write("dostęp do właściwości"+"<br>");
+
+document.write("Pociag pierwszy"+" "+pociag1.ile_wagonow+" "+pociag1.rodzaj+" "+pociag1.pendolino);
+            </textarea>
+        </form>
+
+
+        <input type="button" value="zamknij okno" onclick="okno_zamknij_szczechowski()"/>
+    </body>
+</html>
